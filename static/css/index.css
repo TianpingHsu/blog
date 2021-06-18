@@ -1,0 +1,16 @@
+
+body {
+        font-family: sans-serif;
+        color: #00FF00;
+        background: #000000;
+}
+
+ul {
+        font-family: helvetica;
+}
+
+li {
+        list-style: circle;
+}
+
+h2 { font-size: small }
