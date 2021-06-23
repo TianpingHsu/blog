@@ -1,0 +1,98 @@
+
+body {
+        color: #00FF00;
+        background: #000000;
+    margin: 0;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:1000px;
+    -webkit-font-smoothing: subpixel-antialiased; /* corrects safari rendering */
+}
+
+#doc {
+    position: relative; margin-top: 6rem;
+    margin-bottom: 6rem;
+    text-rendering: optimizeLegibility;
+font-feature-settings: 'kern' 1;
+
+    font-family: body-text-face;
+    color: #333;
+    line-height: 1.43;
+}
+
+h1 {
+    font-family: concourse-t2;
+    font-feature-settings: "ss04";
+    font-size: 1.8rem;
+    line-height: 1.1;
+    width: 28rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1.5rem;
+}
+
+ul {
+        font-family: helvetica;
+}
+
+li {
+        list-style: circle;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: inherit;
+  text-decoration: inherit;
+  color: inherit;
+  width: 100%;
+}
+
+.sidebar {
+  display: inline-block;
+  position: absolute;
+  font-family: feather;
+  font-size: 0.7rem;
+  opacity: 0;
+  transition-property: opacity;
+transition-duration: 0.15s;
+
+  left: 3rem;
+  width: 5rem;
+  height: 10rem;
+  ~border: 1px solid pink;
+  margin-top: 0.2rem;
+  padding-left: 2rem;
+  cursor: pointer;
+}
+
+ul li {
+  margin-left: 1rem;
+  padding-left: 1.25rem;
+  width: 95%;
+}
+
+ol {
+    counter-reset: the-list-counter;
+}
+
+
+
+ol li {
+  margin-left: 2.25rem;
+  width: 90%;
+  list-style: none;
+}
+
+ol li:before {
+    counter-increment: the-list-counter;
+    content: counter(the-list-counter);
+    font-family: "concourse-t3-index";
+    font-size: 1.25rem;
+    position: absolute;
+    margin-top: -0.17rem;
+    margin-left: -2.25rem;
+}
