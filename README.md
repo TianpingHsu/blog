@@ -7,3 +7,6 @@ build a personal blog with Racket
 ```
 racket blog.rkt
 ```
+
+# Write Your Own Post
+you can use the template html file under __'blog/static/posts/article-template.html'__
